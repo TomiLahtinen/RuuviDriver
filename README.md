@@ -21,7 +21,7 @@ Demo app that connects to a RuuviTag running Espruino and provided custom code f
 - [Flash RuuviTag with Espruino](https://www.espruino.com/Ruuvitag) firmware (v. 1.99 or later)
 - Head over to [Espruino Web IDE](https://www.espruino.com/ide/)
 - Connect to RuuviTag
-- Paste contents of `HighresAccelerationBLE.js` file into editor screen
+- Paste contents of [HighresAccelerationBLE.js](https://github.com/TomiLahtinen/RuuviDriver/blob/master/Espruino/HighresAccelerationBLE.js) file into editor screen
 - Send to Espruino
 - type `save()` and hit enter to left-hand side console to flash the software
 - Disconnect
