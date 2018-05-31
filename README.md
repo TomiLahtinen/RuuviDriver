@@ -1,6 +1,8 @@
 # iOS SceneKit + RuuviTag Demo
 Demo app that connects to a RuuviTag running Espruino and provided custom code flashed to it
 
+[Checkout the video on YouTube](https://www.youtube.com/watch?v=ELzRnxChrVI)
+
 ## Requirements
 - iOS Device
 - RuuviTag
