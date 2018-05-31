@@ -12,7 +12,9 @@ import SceneKit
 import CoreBluetooth
 import SwiftBytes
 
-class GameViewController: UIViewController, CBCentralManagerDelegate {
+class RuuviTagViewController: UIViewController, CBCentralManagerDelegate {
+    
+    let beaconUID = "AD35924D-7F82-4AFE-35B0-84B472502345"
     
     var scnView: SCNView!
     var scnScene: SCNScene!
@@ -21,13 +23,12 @@ class GameViewController: UIViewController, CBCentralManagerDelegate {
     var centralManager: CBCentralManager!
     var peripheral: CBPeripheral!
     var pollTimer: Timer!
-    var oscillator: Oscillator!
+    var oscillator: Oscillator?
     var xCharacteristic: CBCharacteristic?
     var yCharacteristic: CBCharacteristic?
     var zCharacteristic: CBCharacteristic?
     
     let dataKey = "kCBAdvDataManufacturerData"
-    let beaconUID = "AD35924D-7F82-4AFE-35B0-84B472502345"
     
     let xUID = "ABCD"
     let yUID = "BCDE"
@@ -37,14 +38,14 @@ class GameViewController: UIViewController, CBCentralManagerDelegate {
     var xValue: Double? {
         didSet {
             updateAngles()
-            oscillator.set(amplitude: xValue!)
+            oscillator?.set(amplitude: xValue!)
         }
     }
     
     var yValue: Double? {
         didSet {
             updateAngles()
-            oscillator.set(frequency: yValue!)
+            oscillator?.set(frequency: yValue!)
         }
     }
     
@@ -60,11 +61,14 @@ class GameViewController: UIViewController, CBCentralManagerDelegate {
         setupScene()
         setupCamera()
         setupTag()
-        setupOscillator()
-        // Do any additional setup after loading the view, typically from a nib.
+        
         xValue = 1
         yValue = 1
         zValue = 1
+        
+        // If you want some noice. Uncomment next line
+        // setupOscillator()
+        
         centralManager = CBCentralManager(delegate: self, queue: DispatchQueue.main)
     }
     
@@ -211,7 +215,7 @@ extension GameViewController: CBPeripheralDelegate {
     
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         guard let data = characteristic.value?.bytes else {
-            debugPrint("No can do")
+            debugPrint("No can do without data :/")
             return
         }
         if data.count != 2 {

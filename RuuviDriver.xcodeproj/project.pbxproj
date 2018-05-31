@@ -10,7 +10,7 @@
 		1FBCD3CBE55BDCC58352A1AE /* Pods_RuuviDriver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE024ED22122D42C7EA9719 /* Pods_RuuviDriver.framework */; };
 		5676F0C020B2896E0028E192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5676F0BF20B2896E0028E192 /* AppDelegate.swift */; };
 		5676F0C220B2896E0028E192 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 5676F0C120B2896E0028E192 /* art.scnassets */; };
-		5676F0C420B2896E0028E192 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5676F0C320B2896E0028E192 /* GameViewController.swift */; };
+		5676F0C420B2896E0028E192 /* RuuviTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5676F0C320B2896E0028E192 /* RuuviTagViewController.swift */; };
 		5676F0C720B2896E0028E192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5676F0C520B2896E0028E192 /* Main.storyboard */; };
 		5676F0C920B289700028E192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5676F0C820B289700028E192 /* Assets.xcassets */; };
 		5676F0CC20B289700028E192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5676F0CA20B289700028E192 /* LaunchScreen.storyboard */; };
@@ -40,7 +40,7 @@
 		5676F0BC20B2896E0028E192 /* RuuviDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuuviDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5676F0BF20B2896E0028E192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5676F0C120B2896E0028E192 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		5676F0C320B2896E0028E192 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5676F0C320B2896E0028E192 /* RuuviTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuuviTagViewController.swift; sourceTree = "<group>"; };
 		5676F0C620B2896E0028E192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5676F0C820B289700028E192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5676F0CB20B289700028E192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			children = (
 				5676F0BF20B2896E0028E192 /* AppDelegate.swift */,
 				5676F0C120B2896E0028E192 /* art.scnassets */,
-				5676F0C320B2896E0028E192 /* GameViewController.swift */,
+				5676F0C320B2896E0028E192 /* RuuviTagViewController.swift */,
 				5676F0C520B2896E0028E192 /* Main.storyboard */,
 				5676F0C820B289700028E192 /* Assets.xcassets */,
 				5676F0CA20B289700028E192 /* LaunchScreen.storyboard */,
@@ -345,7 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56A5159D20BEDA2E00667FED /* Oscillator.swift in Sources */,
-				5676F0C420B2896E0028E192 /* GameViewController.swift in Sources */,
+				5676F0C420B2896E0028E192 /* RuuviTagViewController.swift in Sources */,
 				5676F0C020B2896E0028E192 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
