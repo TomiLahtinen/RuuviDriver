@@ -1,6 +1,4 @@
 var Ruuvitag = require("Ruuvitag");
-var shaken = false;
-var on = false;
 var highresMode = false;
 
 function onInit() {
