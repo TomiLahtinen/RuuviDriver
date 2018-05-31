@@ -176,7 +176,7 @@ class RuuviTagViewController: UIViewController, CBCentralManagerDelegate {
 
 }
 
-extension GameViewController: CBPeripheralDelegate {
+extension RuuviTagViewController: CBPeripheralDelegate {
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         if let _ = error {
             fatalError(error?.localizedDescription ?? "Error :/")
