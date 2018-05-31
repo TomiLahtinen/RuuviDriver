@@ -1,0 +1,17 @@
+PODS:
+  - AudioKit (4.2.3):
+    - AudioKit/UI (= 4.2.3)
+  - AudioKit/UI (4.2.3)
+  - SwiftBytes (0.6.0)
+
+DEPENDENCIES:
+  - AudioKit (~> 4.0)
+  - SwiftBytes
+
+SPEC CHECKSUMS:
+  AudioKit: 65e0035ce267446932ac733257053ac97dfe395e
+  SwiftBytes: e1b23cc4d9b185a9361f9219be6bb8beb7adf679
+
+PODFILE CHECKSUM: 10e377525f5a34303aee30bade9edaabfc900e76
+
+COCOAPODS: 1.4.0
